@@ -40,7 +40,7 @@ def parrot_trouble(talking, hour):
 
 #Makes10
 def makes10(a, b):
-  return (a is 10 or b is 10) or (a + b == 10) 
+  return (a == 10 or b == 10) or (a + b == 10) 
 
 #Near_hundred 
 def near_hundred(n):
@@ -66,7 +66,7 @@ def missing_char(str, n):
 
 #Front_back
 def front_back(str):
-  if len(str) is 1:
+  if len(str) == 1:
     return str
   mid = str[1:len(str) - 1]
   front = str[0:1]
