@@ -14,7 +14,7 @@
 #             3) Randomly choose a value assigned to that key
 #             4) Print both period and devo name
 
-import random
+import random 
 
 #krewes = {2:["a","b","c"],7:["jacob","william","nada"],8:["e","f","g"]}
 krewes = {
