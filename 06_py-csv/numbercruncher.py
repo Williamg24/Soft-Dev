@@ -13,9 +13,9 @@ QCC:
     - N/A
 
 """
-from operator import indexOf
+#from operator import indexOf
 import random
-import math
+#import math
 
 with open("./occupations.csv", 'r', encoding='utf8') as f:
     occupation_data = f.read()
@@ -37,7 +37,7 @@ for occupation in occupation_list:
     if '"' in occupation:
         data_in_comma = comma_in_field(occupation)
         occupation_classes.append(data_in_comma[0])
-        occupation_percentages.append(float(data_in_comma[1]))
+        occupation_percentages.append((data_in_comma[1]))
     else:
         data = occupation.split(",")
         occupation_classes.append(data[0])
