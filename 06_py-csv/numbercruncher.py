@@ -17,7 +17,7 @@ QCC:
 import random
 #import math
 
-with open("./occupations.csv", 'r', encoding='utf8') as f:
+with open("occupations.csv", 'r', encoding='utf8') as f:
     occupation_data = f.read()
     f.close()
 
