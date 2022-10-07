@@ -1,4 +1,4 @@
-# Clyde 'Thluffy' Sinclair
+# MyJuicyWork - Mahir Riki, Jacob Guo, William Guo
 # SoftDev
 # Oct 2022
 
@@ -11,6 +11,7 @@ def hello_world():
     print(__name__)
     return "No hablo queso!"
 
+# this runs because __name__ is set to __main_ by Flask 
 if __name__ == "__main__":  # true if this file NOT imported
     app.debug = True        # enable auto-reload upon code change
     app.run()

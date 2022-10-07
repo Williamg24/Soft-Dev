@@ -1,4 +1,4 @@
-# Clyde 'Thluffy' Sinclair
+# MyJuicyWork - Mahir Riki, Jacob Guo, William Guo
 # SoftDev
 # Oct 2022
 
@@ -10,3 +10,4 @@ def hello_world():
     return "No hablo queso!"
 
 app.run()
+
