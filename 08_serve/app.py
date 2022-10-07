@@ -70,7 +70,7 @@ def random_occupation():
     for i in occupations.keys():
         all_occupations += str(counter) + ") " + i + "<br>"
         counter += 1
-    return "<b>Random Occupation:</b> " + occupation_selector() + "<br>" + "<br>" + "<br>" + all_occupations
+    return "<p>MyJuicyWork - Mahir Riki, Jacob Guo, William Guo</p>" + "<br>" + "<b>Random Occupation:</b> " + occupation_selector() + "<br>" + "<br>" + "<br>" + all_occupations
 
 app.debug = True
 app.run()
