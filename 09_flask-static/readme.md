@@ -1,7 +1,7 @@
-MyJuicyWork - Mahir Riki, Jacob Guo, William Guo
-SoftDev
-K09: Some Things Never Change
-time spent: 
+MyJuicyWork - Mahir Riki, Jacob Guo, William Guo <br>
+SoftDev<br>
+K09: Some Things Never Change<br>
+time spent: <br>
 
 Disco:
 - static/foo downloads the file 
