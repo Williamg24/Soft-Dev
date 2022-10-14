@@ -1,0 +1,18 @@
+# MyJuicyWork - William Guo, Jacob Guo, Mahir Riki
+# SoftDev
+# Oct 14th 2022
+
+'''
+Predictions:
+print(app) - prints URL of the root
+print(request) - prints the webpage that it's serving on
+print(request.args) - prints  user input in the termina
+
+Disco:
+print(request.headers) - information on the console, browser using 
+when you inputed username, app route changes to /auth
+
+when commented out print(request.username), got badrequestkeyerror
+'''
+
+### <"form action = "/auth"> - connects the front end to back
