@@ -1,0 +1,17 @@
+MyJuicyWork -- Mahir Riki, Jacob Guo, William Guo
+SoftDev
+K10 -- Just Plug It In
+2022-10-13
+time spent: 0.2 hrs
+
+
+#Q0: What will happen if you remove render_template from this line? (log your prediction before you pull the trigger...)
+    If you try to open http://127.0.0.1:5000/my_foist_template, it'll show an error message.
+
+#Q1: Can all of your teammates confidently predict the URL to use to load this page?
+    Yes, it is http://127.0.0.1:5000/my_foist_template.
+    
+#Q2: What is the significance of each argument? Simplest, most concise answer best.
+    The first argument is the actual template file; the second argument is setting the variable foo in the html file to  "fooooo"; the third argument is setting collection from the html file to a list of integers called coll.
+    
+- Adding another html file to the templates folder and going to http://127.0.0.1:5000/templates/foo.html resulted in a not found error. 
