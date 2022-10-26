@@ -27,13 +27,18 @@ with open('students.csv') as f:
         c.execute(f"""INSERT INTO students
                     VALUES("{row['name']}", {row['age']}, {row['id']})
                 """)
-        
+    c.execute("SELECT * FROM students")
+    print(c.fetchall())
+    print('\n')
+
 with open('courses.csv') as f:
     reader = csv.DictReader(f, delimiter=',')
     for row in reader:
         c.execute(f"""INSERT INTO courses
                     VALUES("{row['code']}", {row['mark']}, {row['id']})
                 """)
+    c.execute("SELECT * FROM courses")
+    print(c.fetchall())
 # command = ""          # test SQL stmt in sqlite3 shell, save as string
 # c.execute(command)    # run SQL statement
 
