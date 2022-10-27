@@ -125,3 +125,4 @@ db.close()
 ## Extra notes:
 - DictReader maps information from csv file into dict where if the fieldname isn't defined, the first row of the file will be used
 - c.fetchall() returns the data matching the query as a list 
+- primary key automatically sorts the values
