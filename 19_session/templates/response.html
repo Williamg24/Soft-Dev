@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+  David Chen, William Guo, Marc Jiang
+  Disturbed Window Monsters
+  SoftDev
+  Oct 17 2022
+ -->
+<html>
+
+<head>
+  <title>YO WASSUP</title>
+</head>
+
+<body>
+  <div>
+    <h2>Team Name: Disturbed Window Monsters
+      <br>
+      Roster: David, William, Marc
+    </h2>
+    {% if status == "Successful" %}
+    <h1>
+      Welcome to the home of Disturbed Window Monsters!
+    </h1>
+    <form method="POST" action="/logout">
+      <button type="submit" style="position: absolute; top: 0; right: 0; padding:10px; background-color: aquamarine;">
+        Logout
+      </button>
+    </form>
+    {% endif %}
+    <p>Login Status: {{ status }}</p>
+  </div>
+  <br>
+</body>
+
+</html>
