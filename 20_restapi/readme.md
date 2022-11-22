@@ -1,4 +1,4 @@
-## [TNPG] - William Guo, Aden G
+## [TNPG] - William Guo, Aden Garbutt
 ## SoftDev
 ## K20: A RESTful Journey Skyward
 ## 2022-11-21
