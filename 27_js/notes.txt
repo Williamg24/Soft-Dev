@@ -1,0 +1,18 @@
+Team Wired Creations :: William Guo, Craig Chen
+SoftDev pd2
+K27 -- Basic functions in JavaScript
+2023-04-04t
+
+DISCO
+-----------------------------------------------------------------
+* cond statements in scheme to replace if, elif, else
+* scheme refresh
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* Why...?
+* Huh?
+* Teh whah now?
+* SO MUCH PARENTHESISSSSSSSSSSSSS AHHHHHHHH
+=================================================================
