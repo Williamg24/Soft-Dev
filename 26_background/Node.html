@@ -1,0 +1,130 @@
+<!doctype html>
+<!--
+William Guo, Jeffrey Zou
+#SoftDev
+#2023-04-01
+#time spent: 1.5 hrs
+-->
+<style>
+    table, th, td {
+      border:1px solid black;
+    }
+</style>
+<body>
+    <div style = "text-align: center;">
+        <h1>Node.JS One-Pager </h1>
+        <h2>By: William Guo and Jeffrey Zou </h2>
+    </div>
+
+    <ol>
+        <li><h3> What is node?</h3>
+            <p>
+                Developed by Ryan Dahl in 2009, Node is an <b><u><i>open-source and cross platfrom JavaScript runtime environment</i></u></b>.
+                It can be used to generate dynamic web page content, manipulate files on a server, collect form data, and modify data in database. 
+            </p>
+        </li>
+        <li><h3> Core Node concepts</h3>
+            <ul> 
+                <li> <u>Asynchronous</u>
+                    <ul><p>
+                        Node's non-blocking architecture allows tasks to run simultaneously resulting in fast response times. All APIs of node.js are asynchronous meaning the 
+                        server never waits for a return data and it directly moves onto the next call. This is achieved through notification mechanism of Events in Node.js that gets
+                        responses from previous API calls. 
+                        (For more information: <a href = "https://www.linkedin.com/pulse/asynchronous-non-blocking-nature-nodejs-shehan-chanuka/">check this out</a>)
+                    </p></ul>
+                </li>
+                <li> <u>Event-driven Programming</u>
+                    <ul><p>
+                        Once an event (any action that the device perfoms: fire, create, listen (for node)) is triggered or completed, a callback function
+                        is run which only occurs in response to that event. This allows Node.js to be lightweight and memory efficient. 
+                    </p></ul>
+                </li>
+                <li> <u>Single Threaded Architecture</u>
+                    <ul><p>
+                        Node.Js utilizes the Libuv library along with asynchronous calling to handle thousands of concurrent threads efficiently. This is all done
+                        in the same thread which make it highly scalable and popular among top companies such as NASA, Netflix, Uber, LinkedIn and more. 
+                    </p></ul>
+                </li>
+            </ul>
+        </li>
+        <li><h3> Modules</h3>
+            <p>
+                Similar to libraries in JavaScript, modules of node.js allows you use to a variety of functions. In node, there are 3 types of modules:
+                <ul>
+                    <li> Core modules - built in modules in node that are available once node is installed</li>
+                    <li> Local modules - modules that are created by the user in the same folder as the file you are running</li>
+                    <li> Third-party modules - modules that are created by other people and require installation through the npm</li>
+                </ul> 
+            </br>
+                In order to utilize a module, a require function is need in the format of <b> const var_name = require('module_name') </b>. For any local modules,
+                methods use the <b> export() </b> keyword to make functions in that file avilable to other files. 
+                Node has multiple modules for users to use but here are some of the more popular ones:
+                <ul> 
+                    <li> <u>HTTP module</u>, which allows node.js to transfer data over the http. It can create a web server that listens to server ports and gives a response back to clients</li>
+                    <li> <u>File system module</u>, which allows you to work with files on your computer such as reading, writing, and editing them. One to to note is that all file system functions have an asynchronous and synchronous form depending on the developers requirements.  </li>
+                    <li> <u>Console module</u>, which like the name suggests would allow you to print statements into the console. This is great for debugging code. </li>
+                </ul> 
+            </p>
+        </li>
+        <li><h3> Npm</h3>
+            <p>
+               NPM stands for <u> node package manager</u> and this is automatically installed for you upon installation of node. Npm allows you to install packages which contain all the files required to use a module. 
+               To install a package, use the command <b> npm install package_name</b> and this will be stored in seperate folder named "node_modules" in the main folder. 
+            </p>
+        <h4><u>Useful packages</u></h4> 
+        <ul>
+            <li>Express - web framework that provides a collection of tools and features for building robust web applications in Node.js, including routing, handling requests and responses, and integrating with middleware </li> 
+            <ul>Wanna learn more? <a href = "https://expressjs.com/en/api.html"> Express documentation </a></ul>
+            <br>
+            <li>Socket.io - enables real-time, bidirectional and event-based communication between the client and server over websockets</li>
+            <ul>Wanna learn more? <a href = "https://socket.io/docs/v4/"> Socket.io documentation </a></ul>
+            <br>
+            <li>Mysql - enables developers to connect to and interact with MySQL databases, allowing efficient storage, retrieval, and manipulation of data</li>
+            <ul>Wanna learn more? <a href = "https://dev.mysql.com/doc/"> Mysql documentation </a></ul>
+            <br>
+            <li>Mongodb - allows developers to easily integrate MongoDB into their web applications, enabling efficient storage, retrieval, and manipulation of data</li>
+            <ul>Wanna learn more? <a href = "https://www.mongodb.com/docs/"> Mongodb documentation </a></ul>
+          </ul> 
+       </li>
+        <li><h3> Advantages and Disadvantages of Node</h3>
+            <!-- Maybe put a table?-->
+            <table width = "100%">
+                <tr>
+                    <th style = "text-align: center;"> Advantages</th>
+                    <th style = "text-align: center;"> Disadvantages</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>fast and scalable due to it being run on the V8 engine</li>
+                            <li>developers can use JavaScript for both front-end and back-end development</li>
+                            <li>Node.js runs on multiple platforms, including Windows, macOS, and Linux, making it a versatile choice for developers</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>
+                                Bad for heavy CPU intensive tasks since it's single-threaded. For instance, if a huge request or event is in the event loop, it'll slow down processing speed. 
+                            </li>
+                            <li>
+                                “Callback hell issue” where callbacks are nested within other callbacks, making it hard to understand the code.
+                            </li>
+                            <li>
+                                Inadequately made and documented packages from NPM or just straight up incomplete ones. 
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </li>
+    </ol>
+    
+    <p>Below are some useful resources if you want to learn more about node yourself: 
+        <ul>
+            <li><a href = "https://nodejs.org/api/"> Node.js documentation</a></li>
+            <li><a href = "https://www.youtube.com/watch?v=rxzOqP9YwmM"> Chat room project with Node.js and Socket.io</a></li>
+        <ul>
+    </p>
+</body>
+
+</html>
