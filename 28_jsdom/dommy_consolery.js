@@ -84,8 +84,8 @@ function fact(n) {
 }
 // GCD
 function GCD(a,b) {
-  if (!b) {
-    return a;
+  if (a === b) { //compares if a is the same type as b
+    return b;
     }
     return GCD(b, a % b);
 }
