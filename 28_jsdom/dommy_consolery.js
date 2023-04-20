@@ -84,8 +84,8 @@ function fact(n) {
 }
 // GCD
 function GCD(a,b) {
-  if (a === b) { //compares if a is the same type as b
-    return b;
+  if (b===0) { //compares if a is the same type as b
+    return a;
     }
     return GCD(b, a % b);
 }
@@ -98,7 +98,18 @@ const myFxn = (param1, param2) => {
   return retVal;
 };
 
-document.getElementById("fib").innerHTML = fib(5);
-document.getElementById("fact").innerHTML = fact(5);
-document.getElementById("gcd").innerHTML = gcd(3,9);
+const fibBtn = document.getElementById('fib');
+fibBtn.addEventListener ('click', () => {
+  console.log(fib(5));
+})
+
+const factBtn = document.getElementById('fact');
+factBtn.addEventListener ('click', () => {
+  console.log(fact(5));
+})
+
+const gcdBtn = document.getElementById('gcd');
+gcdBtn.addEventListener ('click', () => {
+  console.log(GCD(20,48));
+})
 
