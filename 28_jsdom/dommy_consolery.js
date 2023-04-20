@@ -100,16 +100,19 @@ const myFxn = (param1, param2) => {
 
 const fibBtn = document.getElementById('fib');
 fibBtn.addEventListener ('click', () => {
-  console.log(fib(5));
+  const story = document.body.querySelector(".result"); // access the textarea in html via class name, preceeds with a dot
+  story.textContent = fib(5);
 })
 
 const factBtn = document.getElementById('fact');
 factBtn.addEventListener ('click', () => {
-  console.log(fact(5));
+  const story = document.body.querySelector(".result");
+  story.textContent = fact(5);
 })
 
 const gcdBtn = document.getElementById('gcd');
 gcdBtn.addEventListener ('click', () => {
-  console.log(GCD(20,48));
+  const story = document.body.querySelector(".result");
+  story.textContent = GCD(20,48);
 })
 
