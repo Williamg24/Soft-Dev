@@ -26,9 +26,9 @@ var drawRect = function(e) {
     console.log("mouseclick registered at ", mouseX, mouseY);
     
     ctx.beginPath()
-    ctx.fillStyle = 'orange'
-    ctx.strokeRect(mouseX, mouseY,20,50)
-    ctx.fillRect(mouseX, mouseY,20,50)
+    ctx.fillStyle = 'turquoise'
+    ctx.strokeRect(mouseX, mouseY,50,140)
+    ctx.fillRect(mouseX, mouseY,50,140)
     ctx.stroke()
 }
 
@@ -39,8 +39,8 @@ var drawCircle = (e) => {
     console.log("mouseclick registered at ", mouseX, mouseY);
 
     ctx.beginPath()
-    ctx.fillStyle = 'orange'
-    ctx.arc(mouseX, mouseY, 15, 0, 2 * Math.PI, false)
+    ctx.fillStyle = 'yellow'
+    ctx.arc(mouseX, mouseY, 40, 0, 2 * Math.PI, false)
     ctx.fill()
     ctx.stroke()
 }
@@ -57,7 +57,7 @@ var draw = (e) => {
 
 //var wipeCanvas = function(){
 var wipeCanvas = () => {
-    ctx.clearRect(0,0,600,600);
+    ctx.clearRect(0,0,c.width,c.height);
 }
 
 c.addEventListener("click", draw);
