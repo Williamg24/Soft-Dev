@@ -10,7 +10,7 @@ ctx.fillStyle = 'turquoise'
 var requestID; // init global var for use with animation frames
 
 var clear = (e) => {
-
+    ctx.clearRect(0,0,c.width,c.height)
 };
 
 var radius = 0;
@@ -28,22 +28,26 @@ var drawDot = () => {
     window.cancelAnimationFrame()
     window.requestAnimationFrame()
     */
-   growing = true;
-   ctx.clearRect(0,0,c.width,c.height)
 
-   if(growing){
-    window.requestAniamtionFrame();
-    ctx.beginPath()
-    ctx.arc(c.width/2, c.height/2, radius, 0, 2 * Math.PI, false) 
-    ctx.fill()
-    if(radius <= c.width/2){
-        radius += 0.1   
-     }
-     else{
-        radius -= 0.1 
-    }
+    clear();
+   if(growing && radius > c.width/2){
+    growing = false;
+   }else if (!growing && radius <= 0){
+    growing = true;
    }
 
+   if (growing){
+        radius++;  
+    }else{
+        radius--; 
+    }
+
+    ctx.beginPath();
+    ctx.arc(c.width/2, c.height/2, radius, 0, 2 * Math.PI, false); 
+    ctx.fill();
+
+    window.cancelAnimationFrame(requestID);
+    requestID = window.requestAnimationFrame(drawDot);
 };
 
 //var stopIt = function() {
@@ -55,8 +59,7 @@ var stopIt = () => {
     ... to stop the animation
     You will need window.cancelAnimationFrame()
     */
-   growing = false;
-    window.cancelAnimationFrame()
+    window.cancelAnimationFrame(requestID);
 };
 
 dotButton.addEventListener("click", drawDot);
