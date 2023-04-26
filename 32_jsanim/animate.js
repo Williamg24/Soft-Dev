@@ -73,8 +73,8 @@ var dvdLogoSetup = function() {
     var rectX = Math.random() * 500// construct for selecting random valid xcor
     var rectY = Math.random() * 500// construct for selecting random valid ycor
 
-    var xVel = 2
-    var yVel = 2
+    var xVel = 1
+    var yVel = 1
 
     var logo = new Image();
     logo.src = "logo_dvd.jpg"
@@ -83,10 +83,10 @@ var dvdLogoSetup = function() {
         ctx.clearRect(0,0, c.width, c.height);
         ctx.drawImage(logo, rectX, rectY, rectWidth, rectHeight);
         // bounce criterai
-        if (rectX > c.width || rectX < 0){
+        if (rectX + rectWidth > c.width || rectX < 0){
             xVel = xVel * -1
         }
-        if (rectY > c.height || rectY < 0){
+        if (rectY + rectHeight > c.height || rectY < 0){
             yVel = yVel * -1
         }
         rectX = rectX + xVel
