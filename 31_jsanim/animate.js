@@ -20,8 +20,6 @@ var drawDot = () => {
     /*
     Wipe the canvas, 
     Repaint the circle, 
-
-
     ... and somewhere (where/when is the right time?)
     Update requestID to propagate the animation. 
     You will need
