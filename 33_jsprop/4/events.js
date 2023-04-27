@@ -31,8 +31,11 @@ var clicky = function(e) {
 for (var x=0; x < tds.length; x++) {
   tds[x].addEventListener('click', clicky, true);
   //tds[x].addEventListener('click', clicky, false);
+
+  //A: abosultely nothing for bool
 }
 
+// prediction correct for below
 for (x=0; x < trs.length; x++) {
   trs[x].addEventListener('click', clicky, true);
   //trs[x].addEventListener('click', clicky, false);
